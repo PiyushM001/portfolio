@@ -38,7 +38,7 @@ export default function page() {
   return (
     <div className='comp111'>
       {/* <Cursor/> */}
-      {/* <FAnimation/> */}
+      <FAnimation/>
       {/* <Header/> */}
       <Coverpage/>
       <Cards/>

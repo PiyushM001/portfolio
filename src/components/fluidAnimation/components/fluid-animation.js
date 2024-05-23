@@ -22,7 +22,7 @@ class Pointer {
     this.dy = 0
     this.down = false
     this.moved = false
-    this.color = [0.2, 0.1, 0.001,0.1]
+    this.color = [0.2, 0.1, 0.001]
   }
 }
 
@@ -108,7 +108,6 @@ export default class FluidAnimation {
       Math.random() + 0.2,
       Math.random() + 0.2,
       Math.random() + 0.2,
-      Math.random() + 0.2
     ]
     this._update_color = true
   }
@@ -122,7 +121,7 @@ export default class FluidAnimation {
     this._pointers[0].x = e.offsetX
     this._pointers[0].y = e.offsetY
     if(this._update_color){
-      setInterval(this.color_update, 2000);
+      setInterval(this.color_update, 1000);
       this._update_color = false
     }
     
@@ -131,10 +130,10 @@ export default class FluidAnimation {
   onMouseDown = (e) => {
     this._pointers[0].down = true
     this._pointers[0].color = [
-      Math.random() + 0.2,
-      Math.random() + 0.2,
-      Math.random() + 0.2,
-      Math.random() + 0.2
+      Math.random() + 0.1,
+      Math.random() + 0.1,
+      Math.random() + 0.1,
+     
     ]
   }
 
@@ -146,10 +145,14 @@ export default class FluidAnimation {
     for (let i = 0; i < e.touches.length; ++i) {
       this._pointers[i].down = true
       this._pointers[0].color = [
-        Math.random() + 0.2,
-        Math.random() + 0.2,
-        Math.random() + 0.2,
-        Math.random() + 0.2
+        Math.random() + 0.1,
+        Math.random() + 0.1,
+        Math.random() + 0.1,
+        Math.random() + 0.1,
+        Math.random() + 0.1,
+        Math.random() + 0.1,
+        Math.random() + 0.1,
+        Math.random() + 0.1,
       ]
     }
   }
@@ -167,7 +170,9 @@ export default class FluidAnimation {
 
   onTouchEnd = (e) => {
     for (let i = 0; i < e.touches.length; ++i) {
-      this._pointers[i].down = false
+      
+      setInterval(this._pointers[i].down = false, 10050);
+
     }
   }
 
@@ -247,7 +252,7 @@ export default class FluidAnimation {
     const r = ext.formatR
 
     this._density = createDoubleFBO(
-      2,
+    2,
       this._textureWidth,
       this._textureHeight,
       rgba.internalFormat,
@@ -277,7 +282,7 @@ export default class FluidAnimation {
     )
 
     this._curl = createFBO(
-      5,
+      6,
       this._textureWidth,
       this._textureHeight,
       r.internalFormat,
@@ -351,7 +356,7 @@ export default class FluidAnimation {
   }
 
   _getRandomSplat() {
-    const color = [ Math.random() * 10, Math.random() * 10, Math.random() * 10 ]
+    const color = [ Math.random() * 20, Math.random() * 10, Math.random() * 10 ]
     const x = this._canvas.width * Math.random()
     const y = this._canvas.height * Math.random()
     const dx = 1000 * (Math.random() - 0.5)
@@ -363,25 +368,25 @@ export default class FluidAnimation {
   update() {
     const gl = this._gl
 
-    const dt = Math.min((Date.now() - this._time) / 1000, 0.016)
+    const dt = Math.min((Date.now() - this._time) / 5000, 0.016)
     this._time = Date.now()
-    this._timer += 0.0001
+    this._timer += 0.5
 
     const w = this._textureWidth
     const h = this._textureHeight
-    const iW = 1.0 / w
-    const iH = 1.0 / h
+    const iW = 60 / w
+    const iH = 60 / h
 
     gl.viewport(0, 0, w, h)
 
-    if (this._splatStack.length > 0) {
+    if (this._splatStack.length > 10) {
       this._addSplats(this._splatStack.pop())
     }
 
     this._programs.advection.bind()
     gl.uniform2f(this._programs.advection.uniforms.texelSize, iW, iH)
-    gl.uniform1i(this._programs.advection.uniforms.uVelocity, this._velocity.read[2])
-    gl.uniform1i(this._programs.advection.uniforms.uSource, this._velocity.read[2])
+    gl.uniform1i(this._programs.advection.uniforms.uVelocity, this._velocity.read[1])
+    gl.uniform1i(this._programs.advection.uniforms.uSource, this._velocity.read[1])
     gl.uniform1f(this._programs.advection.uniforms.dt, dt)
     gl.uniform1f(
       this._programs.advection.uniforms.dissipation,
@@ -390,7 +395,7 @@ export default class FluidAnimation {
     this._blit(this._velocity.write[1])
     this._velocity.swap()
 
-    gl.uniform1i(this._programs.advection.uniforms.uVelocity, this._velocity.read[2])
+    gl.uniform1i(this._programs.advection.uniforms.uVelocity, this._velocity.read[10])
     gl.uniform1i(this._programs.advection.uniforms.uSource, this._density.read[2])
     gl.uniform1f(
       this._programs.advection.uniforms.dissipation,
@@ -399,7 +404,7 @@ export default class FluidAnimation {
     this._blit(this._density.write[1])
     this._density.swap()
 
-    for (let i = 0; i < this._pointers.length; i++) {
+    for (let i = 0; i < this._pointers.length; i+=1) {
       const pointer = this._pointers[i]
       if (pointer.moved) {
         this._splat(pointer.x, pointer.y, pointer.dx, pointer.dy, pointer.color)
@@ -409,13 +414,13 @@ export default class FluidAnimation {
 
     this._programs.curl.bind()
     gl.uniform2f(this._programs.curl.uniforms.texelSize, iW, iH)
-    gl.uniform1i(this._programs.curl.uniforms.uVelocity, this._velocity.read[2])
+    gl.uniform1i(this._programs.curl.uniforms.uVelocity, this._velocity.read[10])
     this._blit(this._curl[1])
 
     this._programs.vorticity.bind()
     gl.uniform2f(this._programs.vorticity.uniforms.texelSize, iW, iH)
-    gl.uniform1i(this._programs.vorticity.uniforms.uVelocity, this._velocity.read[2])
-    gl.uniform1i(this._programs.vorticity.uniforms.uCurl, this._curl[2])
+    gl.uniform1i(this._programs.vorticity.uniforms.uVelocity, this._velocity.read[1])
+    gl.uniform1i(this._programs.vorticity.uniforms.uCurl, this._curl[1])
     gl.uniform1f(this._programs.vorticity.uniforms.curl, this._config.curl)
     gl.uniform1f(this._programs.vorticity.uniforms.dt, dt)
     this._blit(this._velocity.write[1])
@@ -423,11 +428,11 @@ export default class FluidAnimation {
 
     this._programs.divergence.bind()
     gl.uniform2f(this._programs.divergence.uniforms.texelSize, iW, iH)
-    gl.uniform1i(this._programs.divergence.uniforms.uVelocity, this._velocity.read[2])
+    gl.uniform1i(this._programs.divergence.uniforms.uVelocity, this._velocity.read[10])
     this._blit(this._divergence[1])
 
     this._programs.clear.bind()
-    let pressureTexId = this._pressure.read[2]
+    let pressureTexId = this._pressure.read[5]
     gl.activeTexture(gl.TEXTURE0 + pressureTexId)
     gl.bindTexture(gl.TEXTURE_2D, this._pressure.read[0])
     gl.uniform1i(this._programs.clear.uniforms.uTexture, pressureTexId)

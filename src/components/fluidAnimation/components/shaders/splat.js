@@ -14,6 +14,6 @@ void main () {
   p.x *= aspectRatio;
   vec3 splat = exp(-dot(p, p) / radius) * color;
   vec3 base = texture2D(uTarget, vUv).xyz;
-  gl_FragColor = vec4(base + splat, 1.0);
+  gl_FragColor = vec4(base + splat, 10.0);
 }
 `
