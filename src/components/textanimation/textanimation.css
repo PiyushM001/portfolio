@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+
+
+p {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3);
+}
+.container {
+  color: #e5e5e5;
+  font-size: 2rem;
+  text-transform: uppercase;
+  height: 19vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  height: 90px;
+  width: 80%;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+
+
+.first {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  /* background-color: #20a7d8; */
+  width: 100%;
+  color: #20a7d8;
+  height: 15vh;
+
+}
+.second div {
+  color: #cd921e;
+  margin-top: 1rem;
+  width: 100%;
+}
+.third div {
+  color: #4bff45;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -8rem;
+  }
+  30% {
+    margin-top: -8rem;
+  }
+  40% {
+    margin-top: -13rem;
+  }
+  60% {
+    margin-top: -13rem;
+  }
+  70% {
+    margin-top: -8rem;
+  }
+  80% {
+    margin-top: -8rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
