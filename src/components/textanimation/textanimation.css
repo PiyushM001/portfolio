@@ -7,17 +7,16 @@ p {
 }
 .container {
   color: #e5e5e5;
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  height: 19vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .animation {
-  height: 90px;
-  width: 80%;
+  height: 50px;
+  width: 100%;
   overflow: hidden;
   margin-left: 1rem;
 }
@@ -32,18 +31,23 @@ p {
   /* background-color: #20a7d8; */
   width: 100%;
   color: #20a7d8;
-  height: 15vh;
+  display: flex;
+  justify-content: center;
 
 }
 .second div {
   color: #cd921e;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 .third div {
+  display: flex;
+  justify-content: center;
   color: #4bff45;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 @keyframes text-animation {
@@ -54,22 +58,22 @@ p {
     margin-top: 0;
   }
   20% {
-    margin-top: -8rem;
+    margin-top: -5rem;
   }
   30% {
-    margin-top: -8rem;
+    margin-top: -5rem;
   }
   40% {
-    margin-top: -13rem;
+    margin-top: -10rem;
   }
   60% {
-    margin-top: -13rem;
+    margin-top: -10rem;
   }
   70% {
-    margin-top: -8rem;
+    margin-top: -5rem;
   }
   80% {
-    margin-top: -8rem;
+    margin-top: -5rem;
   }
   90% {
     margin-top: 0;

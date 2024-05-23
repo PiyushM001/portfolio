@@ -63,6 +63,7 @@ class ReactFluidAnimation extends Component {
           width: '100%',
           height: '100%',
           overflow: 'hidden',
+          backgroundColor:"red",
           ...style
         }}
         {...rest}
@@ -78,7 +79,9 @@ class ReactFluidAnimation extends Component {
           onTouchEnd={this._onTouchEnd}
           style={{
             width: '100%',
-            height: '100%'
+            height: '100%',
+            backgroundColor:"red",
+
           }}
         />
       </div>

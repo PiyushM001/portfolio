@@ -116,8 +116,8 @@ export default class FluidAnimation {
   onMouseMove = (e) => {
     this._pointers[0].down = true
     this._pointers[0].moved = this._pointers[0].down
-    this._pointers[0].dx = (e.offsetX - this._pointers[0].x) * 10.0
-    this._pointers[0].dy = (e.offsetY - this._pointers[0].y) * 10.0
+    this._pointers[0].dx = (e.offsetX - this._pointers[0].x) * 5.0
+    this._pointers[0].dy = (e.offsetY - this._pointers[0].y) * 5.0
     this._pointers[0].x = e.offsetX
     this._pointers[0].y = e.offsetY
     if(this._update_color){
@@ -171,7 +171,7 @@ export default class FluidAnimation {
   onTouchEnd = (e) => {
     for (let i = 0; i < e.touches.length; ++i) {
       
-      setInterval(this._pointers[i].down = false, 10050);
+      this._pointers[i].down = false
 
     }
   }
@@ -368,18 +368,18 @@ export default class FluidAnimation {
   update() {
     const gl = this._gl
 
-    const dt = Math.min((Date.now() - this._time) / 5000, 0.016)
+    const dt = Math.min((Date.now() - this._time) / 8000, 0.016)
     this._time = Date.now()
     this._timer += 0.5
 
     const w = this._textureWidth
     const h = this._textureHeight
-    const iW = 60 / w
-    const iH = 60 / h
+    const iW = 30 / w
+    const iH = 30 / h
 
     gl.viewport(0, 0, w, h)
 
-    if (this._splatStack.length > 10) {
+    if (this._splatStack.length > 1) {
       this._addSplats(this._splatStack.pop())
     }
 
@@ -432,7 +432,7 @@ export default class FluidAnimation {
     this._blit(this._divergence[1])
 
     this._programs.clear.bind()
-    let pressureTexId = this._pressure.read[5]
+    let pressureTexId = this._pressure.read[1]
     gl.activeTexture(gl.TEXTURE0 + pressureTexId)
     gl.bindTexture(gl.TEXTURE_2D, this._pressure.read[0])
     gl.uniform1i(this._programs.clear.uniforms.uTexture, pressureTexId)

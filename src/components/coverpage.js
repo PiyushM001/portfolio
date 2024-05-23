@@ -4,7 +4,7 @@ import Textanimation from './textanimation/textanimation'
 export default function Coverpage() {
   return (
     <>
-    <div className="z-[0] pt-[10vh] w-[100%] comp1 relative h-[100vh] bg-[#ff000000] text-[#ffffff] text-[5vw] font-mochiy-pop flex max-[600px]:flex-col max-[600px]:items-center max-[600px]:h-[100vh] ">
+    <div className=" z-[0] pt-[10vh] w-[100%] comp1 relative h-[100vh] bg-[#ff000000] text-[#ffffff] text-[5vw] font-mochiy-pop flex max-[600px]:flex-col max-[600px]:items-center max-[600px]:h-[100vh] ">
 
       <div className='w-[60%] max-[600px]:w-[100%] flex items-center justify-center  max-[600px]:h-[100vh]'>  
 

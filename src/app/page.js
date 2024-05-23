@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import FAnimation from '@/components/fluidAnimation'
 import Edu from '@/components/education/edu'
+import Coverpage2 from '@/components/coverpage2'
 
 export default function page() {
   useEffect(() => {
@@ -40,7 +41,8 @@ export default function page() {
       {/* <Cursor/> */}
       <FAnimation/>
       {/* <Header/> */}
-      <Coverpage/>
+      {/* <Coverpage/> */}
+      <Coverpage2/>
       <Cards/>
       <Skills/>
       <Edu/>

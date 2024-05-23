@@ -4,7 +4,7 @@ export default function Textanimation() {
   return (
     <div>
       <main class="container">
-  <p> I'm</p>
+ 
   <section class="animation">
     <div class="first"><div>Aspiring Entrepreneur</div></div>
     <div class="second"><div>Full Stack Web Developer</div></div>
