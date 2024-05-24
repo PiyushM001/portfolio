@@ -121,7 +121,7 @@ export default class FluidAnimation {
     this._pointers[0].x = e.offsetX
     this._pointers[0].y = e.offsetY
     if(this._update_color){
-      setInterval(this.color_update, 1000);
+      setInterval(this.color_update, 2000);
       this._update_color = false
     }
     
@@ -368,7 +368,7 @@ export default class FluidAnimation {
   update() {
     const gl = this._gl
 
-    const dt = Math.min((Date.now() - this._time) / 8000, 0.016)
+    const dt = Math.min((Date.now() - this._time) / 10000, 0.016)
     this._time = Date.now()
     this._timer += 0.5
 
