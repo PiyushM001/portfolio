@@ -2,23 +2,24 @@
 import React from "react";
 
 import FluidAnimation from "./components/react-fluid-animation";
-const defaultConfig = {
+const defaultConfig1 = {
   textureDownsample: 1,
-  densityDissipation: 0.94,
-  velocityDissipation: 1.001,
-  pressureDissipation: 0.50,
-  pressureIterations: 28,
-  curl: 40,
-  splatRadius: 0.015,
+  densityDissipation: 0.97,
+  velocityDissipation: 0.70,
+  pressureDissipation: 0,
+  pressureIterations: 0,
+  curl: 20,
+  splatRadius: 0.010,
 };
+
 
 const FAnimation = () => {
   return (
     <div className="w-full h-[100vh] opacity-90  z-[44] ">
-      <FluidAnimation config={defaultConfig} />
-      
 
-      <div className="h-[100vh] -mt-[100vh]  "></div>
+      <FluidAnimation config={defaultConfig1} />
+
+
     </div>
   );
 };
