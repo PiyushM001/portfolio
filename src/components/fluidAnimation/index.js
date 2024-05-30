@@ -15,7 +15,7 @@ const defaultConfig1 = {
 
 const FAnimation = () => {
   return (
-    <div className="w-full h-[100vh] opacity-90  z-[44] ">
+    <div className="w-full h-[100vh]  z-[44] ">
 
       <FluidAnimation config={defaultConfig1} />
 

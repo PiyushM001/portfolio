@@ -1,17 +1,15 @@
 "use client"
 import Cards from '@/components/cards'
-import Coverpage from '@/components/coverpage'
-import Cursor from '@/components/cursor'
-import Header from '@/components/header'
-import Skills from '@/components/skills'
+
 
 import React from 'react'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import FAnimation from '@/components/fluidAnimation'
-import Edu from '@/components/education/edu'
 import Coverpage2 from '@/components/coverpage2'
+import Timeline from '@/components/timeline/timeline'
+import Timeline2 from '@/components/timeline2/timeline2'
 
 export default function page() {
   useEffect(() => {
@@ -40,12 +38,12 @@ export default function page() {
     <div className='comp111'>
       {/* <Cursor/> */}
       <FAnimation/>
+
       {/* <Header/> */}
-      {/* <Coverpage/> */}
       <Coverpage2/>
       <Cards/>
-      <Skills/>
-      <Edu/>
+      <Timeline/>
+<Timeline2/>
     </div>
   )
 }

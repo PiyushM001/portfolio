@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'mochiy-pop': ['Mochiy Pop One', 'sans-serif'],
+        'tea': ['Teachers', 'sans-serif'],
       },
     },
   },

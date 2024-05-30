@@ -1,23 +1,74 @@
 .comp111{
-    background-image: url('../../public/images/bg.png');
+    background-image: url('../../public/images/squarebg.png');
     background-size: 100vw;
-  background-repeat: no-repeat;
+    background-position: center;
   position: relative;
   }
+
+  .compstar{
+    background-image: url('../../public/images/starbg.png');
+    background-size: 100vw;
+    background-position: center;
+  position: relative;
+  }
+
+  @media screen and (max-width: 600px) {
+    .compstar {
+     background-color: #000000;
+    }
+  }
+
+
   .comp1{
-    background-image: url('../../public/images/bg.png');
+    background-image: url('../../public/images/squarebg.png');
     background-size: 100vw;
   background-repeat: no-repeat;
   position: relative;
   }
 
-  .comp2{
-    background-image: url('../../public/images/cardbg.png');
-    background-size: 100vw;
-  background-repeat: no-repeat;
-  position: relative;
+
+
+
+
+  .glass3{
+    background: rgba(0, 0, 0, 0);
+ 
+  
+    box-shadow: 0px 0px 0px 1px rgba(5, 255, 30, 0.918),
+ 	  inset 0px 0px 0px 0px #000000,
+ 	  0 0 0px 0px rgba(20, 227, 245, 0.54),
+ 	  inset 0px 0px 5px 1px #02fd2783;
   }
-  .comp211{
+  .glass32{
+    background: rgba(0, 0, 0, 0);
+ 
+  
+    box-shadow: 0px 0px 0px 1px rgb(5, 251, 255),
+ 	  inset 0px 0px 0px 0px #03e6ff,
+ 	  0 0 0px 0px rgba(6, 234, 255, 0.792),
+ 	  inset 0px 0px 5px 1px #01fbf780;
+  }
+  .glass33{
+    background: rgba(0, 0, 0, 0);
+ 
+  
+    box-shadow: 0px 0px 0px 1px rgb(255, 247, 1),
+ 	  inset 0px 0px 0px 0px #d103ff,
+ 	  0 0 0px 0px rgba(6, 234, 255, 0.792),
+ 	  inset 0px 0px 5px 1px #faff0080;
+  }
+
+
+
+
+
+
+ 
+
+
+
+
+  .card1{
     background-image: url('../../public/images/card11bg.png');
 
     background-size: 100%;
@@ -25,14 +76,28 @@
   background-repeat: no-repeat;
   position: relative;
   }
-  .comp21{
-    background-image: url('../../public/images/card1bg.png');
+  .card2{
+    background-image: url('../../public/images/card22bg.png');
 
     background-size: 100%;
     background-position: center;
   background-repeat: no-repeat;
   position: relative;
   }
+  .card3{
+    background-image: url('../../public/images/card33bg.png');
+
+    background-size: 100%;
+    background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  }
+
+
+
+
+
+
   .comp31{
     background-image: url('../../public/images/skillbg.png');
 
@@ -49,6 +114,13 @@
   background-repeat: no-repeat;
   position: relative;
   }
+
+  .comp2{
+    background-image: url('../../public/images/cardbg.png');
+    background-size: 100vw;
+  background-repeat: no-repeat;
+  position: relative;
+  }
   /* .comp22{
     background-image: url('../../public/images/card2bg.png');
     background-size: 100vw;
@@ -62,12 +134,3 @@
   position: relative;
   } */
 
-  @media (max-width: 600px) {
-    .comp111{
-        background-image: url('../../public/images/bggp.png');
-        background-size: 100vw;
-      background-repeat: no-repeat;
-      position: relative;
-      }
-    
-  }
