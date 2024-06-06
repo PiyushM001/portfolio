@@ -17,7 +17,7 @@ export default function Cards() {
 
 
   
-     <div className='max-[600px]:hidden w-[70vw] max-[600px]:w-[90%]  max-[600px]:flex-col absolute top-[10rem] left-[15vw] pointer-events-none '>
+     <div className='max-[600px]:hidden w-[70vw] max-[600px]:w-[90%]  max-[600px]:flex-col absolute z-[1000] top-[10rem] left-[15vw] pointer-events-none '>
 <div className='text-[4vw] max-[600px]:text-[10vw]   h-[10rem] font-mochiy-pop text-[#cbcbcb] max-[600px]:flex max-[600px]:justify-center max-[600px]:items-center '>What i <span className='text-[#6fff00] m-2'>Do ?</span> </div>
 
 <div className='flex w-[100%]  justify-between max-[600px]:flex-col max-[600px]:items-center '> 
@@ -66,7 +66,7 @@ export default function Cards() {
 
 
 
-    <div className='min-[600px]:hidden h-[100vh] w-full  flex  items-center justify-center max-[600px]:flex-col max-[600px]:h-[150vh] '>
+    <div className='min-[600px]:hidden h-[100vh] w-full  flex  items-center justify-center max-[600px]:flex-col max-[600px]:h-[150vh] z-[1000] '>
      <div className='w-[70%] max-[600px]:w-[90%] max-[600px]:flex max-[600px]:flex-col '>
 <div className='text-[4vw] max-[600px]:text-[10vw]   h-[10rem] font-mochiy-pop text-[#cbcbcb] max-[600px]:flex max-[600px]:justify-center max-[600px]:items-center '>What i <span className='text-[#6fff00] m-2'>Do ?</span> </div>
 

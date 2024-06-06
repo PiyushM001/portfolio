@@ -13,7 +13,7 @@ const defaultConfig1 = {
 };
 const defaultConfig2 = {
   textureDownsample: 1,
-  densityDissipation: 0.97,
+  densityDissipation: 0.92,
   velocityDissipation: 0.70,
   pressureDissipation: 0,
   pressureIterations: 0,
@@ -24,11 +24,11 @@ const defaultConfig2 = {
 
 const FAnimation = () => {
   return (<>
-    <div className="w-full h-[100vh] max-[600px]:hidden z-[44]  ">
+    <div className="w-full h-[100vh] max-[600px]:hidden z-[40]  ">
 
       <FluidAnimation config={defaultConfig1} />
       </div>
-      <div className="w-full h-[100vh] min-[600px]:hidden  z-[44]  ">
+      <div className="w-full h-[100vh] min-[600px]:hidden  z-[40]  ">
 
 <FluidAnimation config={defaultConfig2} />
 </div>

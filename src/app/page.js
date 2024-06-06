@@ -44,6 +44,10 @@ export default function page() {
       <Cards/>
       <Timeline/>
 <Timeline2/>
+<img className='absolute top-0 opacity-30 pointer-events-none w-[100%] z-[100]' src="/images/space.png"></img>
+<img className='absolute min-[600px]:hidden top-[235vh] opacity-30 pointer-events-none w-[100%] z-[100]' src="/images/space.png"></img>
+<img className='absolute min-[600px]:hidden top-[335vh] opacity-30 pointer-events-none w-[100%] z-[100]' src="/images/space.png"></img>
+
     </div>
   )
 }

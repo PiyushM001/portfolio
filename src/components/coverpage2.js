@@ -3,7 +3,7 @@ import Textanimation from './textanimation/textanimation'
 export default function Coverpage2() {
   return (
     <>
-    <div className=' max-[600px]:hidden w-[40vw] left-[30vw] w-[20rem] flex flex-col justify-center text-[#ffffff]  items-center font-mochiy-pop absolute z-[100] top-[30vh] max-[600px]:text-[2rem] max-[600px]:left-[12%] max-[600px]:top-[30vh] pointer-events-none '>
+    <div className=' max-[600px]:hidden w-[40vw] left-[30vw] w-[20rem] flex flex-col justify-center text-[#ffffff]  items-center font-mochiy-pop absolute z-[1000] top-[30vh] max-[600px]:text-[2rem] max-[600px]:left-[12%] max-[600px]:top-[30vh] pointer-events-none '>
           <div className='text-[1.5vw] flex items-center justify-center max-[600px]:text-[6vw] text-[#515151]'>Hello, This is</div>  
       <div className='flex items-center text-[5vw] justify-center max-[600px]:text-[8vw]'>Piyush Mehta</div>
    <Textanimation/>

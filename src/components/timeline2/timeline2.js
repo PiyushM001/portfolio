@@ -17,7 +17,7 @@ export default function Timeline2() {
 <div><FAnimation/></div>
 <section  className='flex-col pointer-events-none ' id= "timeline2">
 
-<div className='text-[4vw]  font-mochiy-pop text-[#67ff34] w-[100%] flex  items-center max-[600px]:text-[10vw]'><div className='w-[70%] flex justify-center'>Skills</div></div>
+<div className='text-[4vw]   font-mochiy-pop text-[#67ff34] w-[100%] flex  items-center max-[600px]:text-[10vw]'><div className='w-[70%] flex justify-center'>Skills</div></div>
 
   <ul data-aos="flip-left" class= "line">
     <li >

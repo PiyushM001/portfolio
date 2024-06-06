@@ -9,7 +9,7 @@ export default function Timeline() {
     <>
   
       <div className='container  relative'>< FAnimation/>
-      <div class=" flex-col min-[600px]:flex  absolute top-[5rem] max-[600px]:top-[-2rem]  max-[600px]:top:[1rem] pointer-events-none z-[1000000] w-full ">
+      <div class=" flex-col min-[600px]:flex  absolute z-[1000000000000000000] top-[5rem] max-[600px]:top-[-2rem] min-[600px]:compstar    pointer-events-none w-full ">
 
       <div className='min-[600px]:hidden ml-[-2rem]'>
     <Fire/>
