@@ -6,10 +6,10 @@ import React from 'react'
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
-import FAnimation from '@/components/fluidAnimation'
 import Coverpage2 from '@/components/coverpage2'
 import Timeline from '@/components/timeline/timeline'
 import Timeline2 from '@/components/timeline2/timeline2'
+import FAnimation from '@/components/fluidAnimation';
 
 export default function page() {
   useEffect(() => {

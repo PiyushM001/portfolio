@@ -360,9 +360,9 @@ export default class FluidAnimation {
   update() {
     const gl = this._gl
 
-    const dt = Math.min((Date.now() - this._time) / 1000, 0.016)
+    const dt = Math.min((Date.now() - this._time) / 1200, 0.016)
     this._time = Date.now()
-    this._timer += 0.0001
+    this._timer += 100
 
     const w = this._textureWidth
     const h = this._textureHeight
