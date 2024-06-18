@@ -1,16 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:700");
 
-
-p {
-  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
-    0 0 3px rgba(255, 255, 255, 0.3);
-}
-.container1 {
+.container11 {
   color: #e5e5e5;
   font-size: 1rem;
   text-transform: uppercase;
   display: flex;
-  align-items: center;
+ height:fit-content;
   justify-content: center;
 }
 
@@ -24,20 +18,18 @@ p {
 
 
 .first1 {
-  animation: text-animation 8s infinite;
+  animation: text-animation2 8s infinite;
 }
 
 .first1 div {
   /* background-color: #20a7d8; */
   width: 100%;
-  color: #20a7d8;
   display: flex;
   justify-content: center;
 
 }
 .second1 div {
-  color: #cd921e;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -45,12 +37,11 @@ p {
 .third1 div {
   display: flex;
   justify-content: center;
-  color: #4bff45;
   width: 100%;
   margin-top: 2rem;
 }
 
-@keyframes text-animation {
+@keyframes text-animation2 {
   0% {
     margin-top: 1rem;
   }
@@ -58,22 +49,22 @@ p {
     margin-top: 1rem;
   }
   20% {
-    margin-top: -3rem;
+    margin-top: -2.8rem;
   }
   30% {
-    margin-top: -3rem;
+    margin-top: -2.8rem;
   }
   40% {
-    margin-top: -6rem;
+    margin-top: -10rem;
   }
   60% {
-    margin-top: -6rem;
+    margin-top: -10rem;
   }
   70% {
-    margin-top: -3rem;
+    margin-top: -2.8rem;
   }
   80% {
-    margin-top: -3rem;
+    margin-top: -2.8rem;
   }
   90% {
     margin-top: 1rem;

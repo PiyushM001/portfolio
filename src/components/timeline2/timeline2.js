@@ -13,20 +13,18 @@ export default function Timeline2() {
 
 
 
-<div className='relative'>
-<div><FAnimation/></div>
+<div className='relative w-[30vw]'>
+
 <section  className='flex-col pointer-events-none ' id= "timeline2">
 
-<div className='text-[4vw]   font-mochiy-pop text-[#67ff34] w-[100%] flex  items-center max-[600px]:text-[10vw]'><div className='w-[70%] flex justify-center'>Skills</div></div>
 
-  <ul data-aos="flip-left" class= "line">
+  <ul  class= "line">
     <li >
-      <div class="cont font-tea text-[1.2rem] p-[0px]">
-        <h3 className=' text-[1.2rem] font-tea text-[#f2f2f2] h-[1.8rem] ml-3'>HTML</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#ffffff] h-[1.8rem] ml-3 '>CSS</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#f1f1f1] h-[1.8rem] ml-3 '>JavaScript</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#f1f1f1] h-[1.8rem] ml-3 '>C++</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#f1f1f1] h-[1.8rem] ml-3 '>Python</h3>
+      <div class="cont font-league font-bold text-[1.2rem] p-[0px]">
+        <h3 className=' text-[1.5rem] font-league font-bold text-[#f2f2f2] h-[1.8rem] ml-3'>HTML</h3>
+        <h3 className=' text-[1.5rem] font-league font-bold text-[#ffffff] h-[1.8rem] ml-3 '>CSS</h3>
+        <h3 className=' text-[1.5rem] font-league font-bold text-[#f1f1f1] h-[1.8rem] ml-3 '>JavaScript</h3>
+      
 
 
 
@@ -39,8 +37,8 @@ export default function Timeline2() {
     
     <li >
       <div  class="cont">
-      <h3 className=' text-[1.2rem] font-tea text-[#f2f2f2] h-[1.8rem]'>React.js</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#ffffff] h-[1.8rem]'>Next.js</h3>
+      <h3 className=' text-[1.5rem] font-league font-bold text-[#f2f2f2] h-[1.8rem]'>React.js</h3>
+        <h3 className=' text-[1.5rem] font-league font-bold text-[#ffffff] h-[1.8rem]'>Next.js</h3>
       </div>
     </li>
 
@@ -50,18 +48,18 @@ export default function Timeline2() {
 
 
       <div class="cont">
-      <h3 className=' text-[1.2rem] font-tea text-[#f2f2f2] h-[1.8rem] ml-3'>GitHub</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#ffffff] h-[1.8rem] ml-3 '>Express.js</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#f1f1f1] h-[1.8rem] ml-3 '>MongoDb</h3>
+      <h3 className=' text-[1.5rem] font-league font-bold text-[#f2f2f2] h-[1.8rem] ml-3'>Node.js</h3>
+        <h3 className=' text-[1.5rem] font-league font-bold text-[#ffffff] h-[1.8rem] ml-3 '>Express.js</h3>
+        <h3 className=' text-[1.5rem] font-league font-bold text-[#f1f1f1] h-[1.8rem] ml-3 '>MongoDb</h3>
       </div>
     </li>
     <li>
 
 
       <div class="cont">
-      <h3 className=' text-[1.2rem] font-tea text-[#f2f2f2] h-[1.8rem] ml-3'>Node.js</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#ffffff] h-[1.8rem] ml-3 '>Express.js</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#f1f1f1] h-[1.8rem] ml-3 '>MongoDb</h3>
+      <h3 className=' text-[1.5rem] font-league font-bold text-[#f2f2f2] h-[1.8rem] ml-3'>Github</h3>
+        <h3 className=' text-[1.5rem] font-league font-bold text-[#ffffff] h-[1.8rem] ml-3 '>Tailwind</h3>
+        <h3 className=' text-[1.5rem] font-league font-bold text-[#f1f1f1] h-[1.8rem] ml-3 '>WebSockets</h3>
       </div>
     </li>
     <li>
@@ -69,9 +67,9 @@ export default function Timeline2() {
 
 
       <div class="cont">
-      <h3 className=' text-[1.2rem] font-tea text-[#f2f2f2] h-[1.8rem] ml-3'>HTML</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#ffffff] h-[1.8rem] ml-3 '>CSS</h3>
-        <h3 className=' text-[1.2rem] font-tea text-[#f1f1f1] h-[1.8rem] ml-3 '>JS</h3>
+      <h3 className=' text-[1.5rem] font-league font-bold text-[#f1f1f1] h-[1.8rem] ml-3 '>C++</h3>
+      <h3 className=' text-[1.5rem] font-league font-bold text-[#f1f1f1] h-[1.8rem] ml-3 '>Python</h3>
+        <h3 className=' text-[1.5rem] font-league font-bold text-[#f1f1f1] h-[1.8rem] ml-3 '>Solidity</h3>
       </div>
     </li>
   </ul>

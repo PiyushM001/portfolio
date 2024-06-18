@@ -24,6 +24,6 @@ void main () {
   float T = sampleVelocity(vT).y;
   float B = sampleVelocity(vB).y;
   float div = 0.5 * (R - L + T - B);
-  gl_FragColor = vec4(div, 100.0, 100.0, 100.0);
+  gl_FragColor = vec4(div, 1.0, 1.0, 1.0);
 }
 `

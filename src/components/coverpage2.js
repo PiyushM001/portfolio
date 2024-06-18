@@ -1,23 +1,28 @@
 import React from 'react'
 import Textanimation from './textanimation/textanimation'
+import Cssimg from './cssimage/cssimg'
+import Slicedtext from './slicedtext/slicedtext'
 export default function Coverpage2() {
   return (
     <>
-    <div className=' max-[600px]:hidden w-[40vw] left-[30vw] w-[20rem] flex flex-col justify-center text-[#ffffff]  items-center font-mochiy-pop absolute z-[1000] top-[30vh] max-[600px]:text-[2rem] max-[600px]:left-[12%] max-[600px]:top-[30vh] pointer-events-none '>
-          <div className='text-[1.5vw] flex items-center justify-center max-[600px]:text-[6vw] text-[#515151]'>Hello, This is</div>  
-      <div className='flex items-center text-[5vw] justify-center max-[600px]:text-[8vw]'>Piyush Mehta</div>
-   <Textanimation/>
-<div className='text-[1vw] font-tea text-center text-[#7bfff6] w-full  max-[600px]:w-[100%]'> Exploring the intersection of technology and creativity is what fuels my drive. Currently pursuing my B.Tech at IIT Roorkee, I'm on a mission to bring innovative ideas to life.</div>
+    <div className=' max-[600px]:hidden w-[100vw] left-[0vw] h-[80svh] flex flex-col justify-center text-[#ffffff]  items-center  absolute z-[1000] top-[0]   pointer-events-none '>
+          <div className='text-[3rem]  font-extrabold flex items-center justify-center max-[600px]:text-[6vw] text-[#515151] font-league'>Hello, This is</div>  
+      <div className='flex items-center text-[7vw] justify-center max-[600px]:text-[8vw] font-public font-bold  '><Slicedtext text="PIYUSH MEHTA" /></div>
+      <div className='w-full flex-col justify-evenly '>
+
+   
+<div className='text-[2vw]   text-center text-[#7a7a7a]   max-[600px]:w-[100%] font-public font-bold'> Exploring the intersection of technology and creativity </div>
+</div>
     </div>
 
 
 
     
-    <div className='min-[600px]:hidden      w-[100%] flex flex-col justify-center text-[#ffffff]  items-center font-mochiy-pop absolute z-[100] top-[30vh] max-[600px]:text-[2rem] pointer-events-none '>
-          <div className='text-[1.5vw] flex items-center justify-center max-[600px]:text-[6vw] text-[#515151]'>Hello, This is</div>  
-      <div className='flex items-center text-[2.5rem] justify-center '>Piyush Mehta</div>
-   <Textanimation/>
-<div className='text-[15px] px-8 font-tea text-center text-[#7bfff6] w-[20vw]  max-[600px]:w-[100%]'>Exploring the intersection of technology and creativity is what fuels my drive. Currently pursuing my B.Tech at IIT Roorkee, I'm on a mission to bring innovative ideas to life</div>
+    <div className='min-[600px]:hidden      w-[100%] flex flex-col justify-center text-[#ffffff]  items-center font-public absolute z-[100] top-[30vh] max-[600px]:text-[2rem] pointer-events-none '>
+          <div className='text-[1.5vw] flex items-center justify-center max-[600px]:text-[6vw] text-[#999999] font-bold'>Hello, This is</div>  
+      <div className='flex items-center text-[3rem] justify-center font-bold '>PIYUSH MEHTA</div>
+   
+<div className='text-[20px] px-8 font-tea text-center text-[#7e7e7e] w-[20vw] font-semibold  max-[600px]:w-[100%]'>Exploring the intersection of technology and creativity is what fuels my drive. Currently pursuing my B.Tech at IIT Roorkee</div>
     </div>
     </>
   )

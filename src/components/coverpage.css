@@ -17,6 +17,16 @@
     .compstar {
      background-color: #000000;
     }
+
+    .bgicompcls{
+      margin-top: -300vh;
+    }
+    .comp111{
+      background-image: url('../../public/images/squarebg2.png');
+      background-size: 100vw;
+      background-position: center;
+    position: relative;
+    }
   }
 
 
@@ -31,35 +41,15 @@
 
 
 
-  .glass3{
-    background: rgba(0, 0, 0, 0);
+.glass{
  
-  
-    box-shadow: 0px 0px 0px 1px rgba(5, 255, 30, 0.918),
- 	  inset 0px 0px 0px 0px #000000,
- 	  0 0 0px 0px rgba(20, 227, 245, 0.54),
- 	  inset 0px 0px 5px 1px #02fd2783;
-  }
-  .glass32{
-    background: rgba(0, 0, 0, 0);
  
-  
-    box-shadow: 0px 0px 0px 1px rgb(5, 251, 255),
- 	  inset 0px 0px 0px 0px #03e6ff,
- 	  0 0 0px 0px rgba(6, 234, 255, 0.792),
- 	  inset 0px 0px 5px 1px #01fbf780;
-  }
-  .glass33{
-    background: rgba(0, 0, 0, 0);
- 
-  
-    box-shadow: 0px 0px 0px 1px rgb(255, 247, 1),
- 	  inset 0px 0px 0px 0px #d103ff,
- 	  0 0 0px 0px rgba(6, 234, 255, 0.792),
- 	  inset 0px 0px 5px 1px #faff0080;
-  }
-
-
+  background: linear-gradient(90deg, rgba(240,12,208,0.3982843137254902) 1%, rgba(183,9,245,0.37307422969187676) 48%, rgba(0,155,255,0.40388655462184875) 100%);  box-shadow: 0 8px 32px 0 rgba(46, 57, 206, 0.37);
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
 
 

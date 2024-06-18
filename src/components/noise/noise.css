@@ -1,0 +1,93 @@
+@import "https://unpkg.com/open-props/durations.min.css";
+
+/* 
+  Typed a length for size interpolation
+  Initial value is part of the hack at a super
+  small subpixel value
+*/
+@property --lines {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0.00010px;
+}
+
+/* 
+  Ping/pong animation 
+  Change value to change speed
+  Faster = more sub pixels to transition
+*/
+@keyframes liner {
+  50% {
+    --lines: 12px;
+  }
+}
+
+@layer demo {
+  .noise {
+    /* Animate the length custom property */
+    animation: liner var(--hour) linear infinite;
+    
+    /*
+      Repeating sub pixel radial hard stop lines
+      Creates thousands, so small they distort
+      Use this distortion as a mask
+      The hard stops are basically on/off lines
+    */
+    mask: repeating-radial-gradient(
+      #000,
+      var(--lines),
+      #000,
+      0,
+      #0000,
+      calc(var(--lines) * 2),
+      #0000 0
+    );
+  }
+}
+
+@layer demo.gradient-text {
+  .noise {
+    --space: initial;
+    @supports (background: linear-gradient(in oklch, #000, #000)) {
+      --space: in oklch;
+    }
+    
+    display: grid;
+    place-content: center;
+    
+    background-image: linear-gradient(
+      to right var(--space), 
+      deeppink, blue
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    @media (prefers-color-scheme: light) {
+      background-image: linear-gradient(
+        to right var(--space), 
+        black, gray
+      );
+      
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+@layer demo.support {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .noisebody {
+    min-block-size: 100%;
+    font-family: system-ui, sans-serif;
+    display: grid;
+    place-content: center;
+  }
+  
+  h1 {
+    font-size: 30vmin;
+  }
+}

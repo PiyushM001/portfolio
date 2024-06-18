@@ -24,11 +24,11 @@ const defaultConfig2 = {
 
 const FAnimation = () => {
   return (<>
-    <div className="w-full h-[100vh] max-[600px]:hidden z-[40]  ">
+    <div className="w-[100vw] h-[100vh] max-[600px]:hidden z-[40]  ">
 
       <FluidAnimation config={defaultConfig1} />
       </div>
-      <div className="w-full h-[100vh] min-[600px]:hidden  z-[40]  ">
+      <div className="w-[100vw] h-[100vh] min-[600px]:hidden  z-[40]  ">
 
 <FluidAnimation config={defaultConfig2} />
 </div>

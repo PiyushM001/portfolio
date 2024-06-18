@@ -16,11 +16,11 @@ z-index: 1000;
 
 #timeline2 ul
 {
-  min-height: 450px;
+  min-height: 700px;
   width: 48%;
   border-top: 0;
   border-left:dashed;
-  border-left-color: #7ab800; /* Fullback */
+  border-left-color: #ededed; /* Fullback */
  
   border-image-slice: 1;
   position: relative;
@@ -28,7 +28,23 @@ z-index: 1000;
   left: 48%;
   perspective: 2000px
 }
+@media screen and (max-width: 600px) {
 
+  #timeline2 ul
+{
+  min-height: 470px;
+  width: 48%;
+  border-top: 0;
+  border-left:dashed;
+  border-left-color: #ededed; /* Fullback */
+ 
+  border-image-slice: 1;
+  position: relative;
+  top: 5%;
+  left: 48%;
+  perspective: 2000px
+}
+}
 #timeline2 ul li:after
 {
   content: "\2713";
@@ -41,7 +57,7 @@ z-index: 1000;
   font-size: 90%;
   line-height:35px;
   text-align: center;
-  background-color: #7ab800;
+  background-color: #dddddd;
   color: #fff;
   position:absolute;
   -webkit-transition: transform 1s linear;
