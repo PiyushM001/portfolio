@@ -6,11 +6,7 @@
   }
 
   .compstar{
-    background-image: url('../../public/images/starbg.png');
-    background-size: 100%;
-    opacity:0.5;
-    background-position: center;
-  position: relative;
+ background-color: red;
   }
 
   @media screen and (max-width: 600px) {
