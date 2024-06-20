@@ -23,7 +23,7 @@ export default function Bigcomp() {
       <section className='w-[60vw] h-fit ml-[20vw] pointer-events-none  max-[600px]:mt-[5rem] ' >
         <h2 className='flex glass justify-center  '>SKILLS</h2>
       </section>
-      <section className='w-[60vw] relative z-[2] max-[600px]:w-[80vw]  ml-[20vw] pt-[4rem] pointer-events-none'>
+      <section className='w-[60vw] relative z-[2] max-[600px]:w-[90vw]  ml-[20vw] pt-[4rem] pointer-events-none'>
         
 <div className='w-[50%] timeline flex justify-center h-[60vh] text-[#d5d5d5] ml-[30vw] max-[600px]:ml-1  mt-[40vh] '><Timeline2/></div>
 

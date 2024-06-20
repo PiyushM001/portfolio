@@ -403,7 +403,7 @@ section:nth-of-type(4) .box:nth-of-type(2) {
 	
 	@media screen and (max-width: 600px) {
 		section:nth-of-type(4) {
-			margin-left: 10vw;
+			margin-left: 5vw;
 		}
 	.timeline{
 		margin-left: 20vw;
@@ -419,11 +419,11 @@ section:nth-of-type(4) .box:nth-of-type(2) {
 			pointer-events: none;
 			position: absolute;
 			bottom: 0;
-			height: calc(100% + 120cqi);
+			height: calc(50% + 120cqi);
 			width: 100vw;
 			left: 50%;
 			translate: -50% 0;
-			border-radius: 0 0 10vmin 10vmin;
+			border-radius: 0 0 5vmin 5vmin;
 			background: linear-gradient(90deg, rgba(240,12,208,0.3982843137254902) 1%, rgba(183,9,245,0.37307422969187676) 48%, rgba(0,155,255,0.40388655462184875) 100%);  box-shadow: 0 8px 32px 0 rgba(46, 57, 206, 0.37);
 			mask: linear-gradient(transparent, rgb(163, 78, 78) 25%);
 		}
