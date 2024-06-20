@@ -214,7 +214,7 @@ section:nth-of-type(5) {
 	display: grid;
 	gap: 2rem;
 	grid-template-columns: 1fr 1fr;
-	padding: 4rem 0 20vh 0;
+	padding: 4rem 0 10vh 0;
 	transform-style: preserve-3d;
 }
 
@@ -411,7 +411,9 @@ section:nth-of-type(4) .box:nth-of-type(2) {
 		
 	}
 		.box{
-			background-color: rgba(9, 9, 9, 0.162);
+			background-color: rgba(0, 0, 0, 0.37);
+			height: 103vh;
+			margin-bottom: -10rem;
 		}
 		section:nth-of-type(5)::before {
 			content: "";
@@ -419,7 +421,7 @@ section:nth-of-type(4) .box:nth-of-type(2) {
 			pointer-events: none;
 			position: absolute;
 			bottom: 0;
-			height: calc(50% + 120cqi);
+			height:150svh;
 			width: 100vw;
 			left: 50%;
 			translate: -50% 0;

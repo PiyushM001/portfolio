@@ -20,14 +20,14 @@ export default function Bigcomp() {
       <section >
     
       </section>
-      <section className='w-[60vw] h-fit ml-[20vw] pointer-events-none  max-[600px]:mt-[5rem] ' >
-        <h2 className='flex glass justify-center  '>SKILLS</h2>
+      <section className='w-[60vw] h-fit ml-[20vw] pointer-events-none  max-[600px]:mt-[10rem] ' >
+        <h2 className='flex text-[#ffffff] justify-center  '>SKILLS</h2>
       </section>
       <section className='w-[60vw] relative z-[2] max-[600px]:w-[90vw]  ml-[20vw] pt-[4rem] pointer-events-none'>
         
 <div className='w-[50%] timeline flex justify-center h-[60vh] text-[#d5d5d5] ml-[30vw] max-[600px]:ml-1  mt-[40vh] '><Timeline2/></div>
 
-        <div class="sticky">
+        <div class="sticky max-[600px]:hidden ">
           <img src="./images/laptop.png" alt="" />
         </div>
         <div class="box box--two">
@@ -39,8 +39,13 @@ export default function Bigcomp() {
           </div>
         </div>
       </section>
+
+
+
+
+
       <section>
-        <div class="bento--mini twitterbg w-[27vw] max-[600px]:w-[34vw] max-[600px]:ml-[10vw]  ml-[20vw]">
+        <div class="bento--mini twitterbg w-[27vw] max-[600px]:w-[34vw] max-[600px]:ml-[10vw] max-[600px]:mt-[8rem]  ml-[20vw]">
           <div>
             <svg
               class="bird"
@@ -59,10 +64,7 @@ export default function Bigcomp() {
           </div>
         </div>
 
-
-
-
-        <div class="bento--mini twitterbg w-[27vw]  max-[600px]:w-[34vw] ml-[2vw]">
+        <div class="bento--mini twitterbg  w-[27vw] max-[600px]:mt-[8rem]  max-[600px]:w-[34vw] ml-[1vw]">
           <div>
             <svg
               class="bird"
@@ -81,11 +83,13 @@ export default function Bigcomp() {
           </div>
         </div>
 
-
-
-
-
       </section>
+
+
+
+
+
+
       <section className='pointer-events-none'>
         <div class="section__content w-[50vw] ml-[-30vw] ">
           <h2 className='text-[#959595] font-tea'>Designed and Developed by Piyush Mehta</h2>
