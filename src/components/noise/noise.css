@@ -62,15 +62,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    @media (prefers-color-scheme: light) {
-      background-image: linear-gradient(
-        to right var(--space), 
-        black, gray
-      );
-      
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  
   }
 }
 
