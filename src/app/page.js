@@ -49,7 +49,7 @@ export default function page() {
       {/* <Header/> */}
       <Coverpage2/>
       
-      <Ms/>
+     
       <ScrollComponent/>
      
       <Cards/>
