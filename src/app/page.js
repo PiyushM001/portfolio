@@ -43,7 +43,7 @@ export default function page() {
   return (
     <div className='comp111'>
       {/* <Cursor/> */}
-      
+
       <FAnimation/>
 
       {/* <Header/> */}
@@ -57,8 +57,8 @@ export default function page() {
       <Timeline/>
 {/* <Timeline2/> */}
 <div className='w-full h-[100svh] '>
-  <FAnimation/><FAnimation/><FAnimation/><div className='max-[600px]:hidden'><FAnimation/></div>
-  <div className='w-full h-[100svh] mt-[-400svh] bgicompcls '><Bigcomp/></div>
+  <FAnimation/><FAnimation/><FAnimation/><FAnimation/>
+  <div className='w-full h-[100svh] mt-[-400svh]  '><Bigcomp/></div>
 </div>
 
 <div className='absolute top-8 left-8 max-[600px]:left-2 max-[600px]:top-3 '><Textanimation/></div>

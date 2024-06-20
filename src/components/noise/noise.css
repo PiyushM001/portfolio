@@ -47,7 +47,7 @@
 
 @layer demo.gradient-text {
   .noise {
-    --space: initial;
+    --space: ;
     @supports (background: linear-gradient(in oklch, #000, #000)) {
       --space: in oklch;
     }
