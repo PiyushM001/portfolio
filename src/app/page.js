@@ -44,7 +44,7 @@ export default function page() {
     <div className='comp111'>
       {/* <Cursor/> */}
 
-      <FAnimation/>
+      <div className='h-[100svh] w-[100%] bg-[#1a1a1a]'> </div>
 
       {/* <Header/> */}
       <Coverpage2/>
