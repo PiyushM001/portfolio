@@ -2,16 +2,16 @@ import React from 'react'
 import './timeline.css'
 import '../coverpage.css'
 
+import Fire from '../fire'
+import FAnimation from '../fluidAnimation'
 import Slicedtext from '../slicedtext/slicedtext'
 import Ms2 from '../movingstrip/ms2'
-import FAnimation from '../fluidAnimation'
 export default function Timeline() {
   return (
     <>
   
-      <div className='container  relative flex justify-center'> 
-        {/* <FAnimation/> */}<div className='h-[100svh] w-[100%] bg-[#1a1a1a]'> </div>
-      <div class=" flex-col min-[600px]:flex  absolute z-[1000000000000000000] top-[0rem]    max-[600px]:h-[150vh]  pointer-events-none w-full ">
+      <div className='container  relative flex justify-center'>< FAnimation/>
+      <div class=" flex-col min-[600px]:flex  absolute z-[1000000000000000000] top-[0rem] max-[600px]:top-[-2rem] min-[600px]:compstar  max-[600px]:h-[150vh]  pointer-events-none w-full ">
 
       {/* <div className='min-[600px]:hidden ml-[-2rem]'>
     <Fire/>
@@ -52,7 +52,7 @@ export default function Timeline() {
 
   </div>
 
-  <div data-aos="fade-up" className='max-[600px]:bg-[#00000000] flex flex-col w-[50vw] max-[600px]:w-[100%] h-[25rem] max-[600px]:h-[22rem] max-[600px]:mt-[3rem] items-end max-[600px]:items-center  mr-[8rem] max-[600px]:mr-[0]'>
+  <div data-aos="fade-up" className='max-[600px]:bg-[#0000008f] flex flex-col w-[50vw] max-[600px]:w-[100%] h-[25rem] max-[600px]:h-[22rem] max-[600px]:mt-[3rem] items-end max-[600px]:items-center  mr-[8rem] max-[600px]:mr-[0]'>
   <div className=' noise text-[4rem] font-extrabold max-[600px]:text-[3rem]'>IIT ROORKEE </div>
   <h  className="text-[#616161] text-[1.08rem] font-public font-extrabold  max-[600px]:text-[0.8rem] max-[600px]:w-[71%]">INDIAN INSTITUTE OF TECHNOLOGY, ROORKEE </h>
 
