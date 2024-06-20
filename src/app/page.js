@@ -45,7 +45,7 @@ export default function page() {
       {/* <Cursor/> */}
       
       <FAnimation/>
-     
+      <FAnimation/>
       {/* <Header/> */}
       <Coverpage2/>
       <Ms/>
