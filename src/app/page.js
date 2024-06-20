@@ -45,10 +45,10 @@ export default function page() {
       {/* <Cursor/> */}
       
       <FAnimation/>
-
+     
       {/* <Header/> */}
       <Coverpage2/>
-      
+      <Ms/>
      
       <ScrollComponent/>
      
