@@ -40,7 +40,7 @@ export default function Bigcomp() {
         </div>
       </section>
       <section>
-        <div class="bento--mini twitterbg w-[27vw]  ml-[20vw]">
+        <div class="bento--mini twitterbg w-[27vw] max-[600px]:w-[34vw] max-[600px]:ml-[10vw]  ml-[20vw]">
           <div>
             <svg
               class="bird"

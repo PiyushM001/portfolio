@@ -45,7 +45,7 @@ const ScrollComponent = () => {
       <div className='w-[100vw] mainreveal'>
         <div className='w-[100vw] sectionreveal'>
           <p className='w-[70vw] max-[600px]:w-[100vw] '>
-            <span className='max-[600px]:text-[2rem] max-[600px]:font-bold max-[600px]:w-[80vw] ' contentEditable="true">Crafting Elegant User Experiences with Modern Web Technologies and Creativity</span>
+            <span className='max-[600px]:text-[2.5rem] max-[600px]:font-bold max-[600px]:w-[90vw] ' contentEditable="true">Crafting Elegant User Experiences with Modern Web Technologies and Creativity</span>
           </p>
         </div>
       </div>

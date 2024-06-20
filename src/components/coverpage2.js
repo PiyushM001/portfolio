@@ -18,7 +18,7 @@ export default function Coverpage2() {
 
 
     
-    <div className='min-[600px]:hidden      w-[100%] flex flex-col justify-center text-[#ffffff]  items-center font-public absolute z-[100] top-[30vh] max-[600px]:text-[2rem] pointer-events-none '>
+    <div className='min-[600px]:hidden  h-[80svh]    w-[100%] flex flex-col justify-center text-[#ffffff]  items-center font-public absolute z-[100] top-[5vh] max-[600px]:text-[2rem] pointer-events-none '>
           <div className='text-[1.5vw] flex items-center justify-center max-[600px]:text-[6vw] text-[#999999] font-bold'>Hello, This is</div>  
       <div className='flex items-center text-[3rem] justify-center font-bold '>PIYUSH MEHTA</div>
    

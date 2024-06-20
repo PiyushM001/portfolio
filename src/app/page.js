@@ -55,9 +55,9 @@ export default function page() {
    
       <Timeline/>
 {/* <Timeline2/> */}
-<div className='w-full h-[100vh] '>
+<div className='w-full h-[100svh] '>
   <FAnimation/><FAnimation/><FAnimation/><div className='max-[600px]:hidden'><FAnimation/></div>
-  <div className='w-full h-[100vh] mt-[-400vh] bgicompcls '><Bigcomp/></div>
+  <div className='w-full h-[100svh] mt-[-400svh] bgicompcls '><Bigcomp/></div>
 </div>
 
 <div className='absolute top-8 left-8 max-[600px]:left-2 max-[600px]:top-3 '><Textanimation/></div>
@@ -65,7 +65,7 @@ export default function page() {
 
 <button className=' from-[#2abcf5] max-[600px]:right-2 max-[600px]:w-[7rem] max-[600px]:top-4 to-[#d909f9] bg-gradient-to-r  w-[10rem] p-1  rounded-[20px] font-league font-bold text-[1.5rem]  z-[10000000000000] fixed top-8 right-8'>Resume</button>
 {/* <img className='absolute min-[600px]:hidden top-0 opacity-30 pointer-events-none w-[100%] z-[100]' src="/images/space.png"></img> */}
-<img className='absolute min-[600px]:hidden top-[0] opacity-30 pointer-events-none w-[100%] h-[100vh] z-[100]' src="/images/space.png"></img>
+<img className='absolute min-[600px]:hidden top-[0] opacity-30 pointer-events-none w-[100%] h-[100svh] z-[100]' src="/images/space.png"></img>
 
     </div>
   )
