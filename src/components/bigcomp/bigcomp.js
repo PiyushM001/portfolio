@@ -2,6 +2,7 @@ import React from 'react'
 import './bigcomp.css'
 import 'normalize.css';
 import Timeline2 from '../timeline2/timeline2';
+import Slicedtext from '../slicedtext/slicedtext';
 export default function Bigcomp() {
   return (
     <div className='body3'>
@@ -21,7 +22,7 @@ export default function Bigcomp() {
     
       </section>
       <section className='w-[60vw] h-fit ml-[20vw] pointer-events-none  max-[600px]:mt-[10rem] ' >
-        <h2 className='flex text-[#ffffff] justify-center  '>SKILLS</h2>
+        <h2 className='flex text-[#ffffff] justify-center  '><Slicedtext text="SKILLS"/></h2>
       </section>
       <section className='w-[60vw] relative z-[2] max-[600px]:w-[90vw]  ml-[20vw] pt-[4rem] pointer-events-none'>
         
