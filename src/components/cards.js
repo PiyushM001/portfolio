@@ -76,7 +76,7 @@ export default function Cards() {
 
 
 
-<div  data-aos="fade-up" className='h-[36vh] w-[88vw]  rounded-[3vw] bg-[#28282862] card2  flex items-end m-2 max-[600px]:mt-[5rem]  ' >
+<div  data-aos="fade-up" className='h-[36vh] w-[88vw]  rounded-[3vw] bg-[#28282862] border-[2px] border-[#242424] card2  flex items-end m-2 max-[600px]:mt-[5rem]  ' >
     <div className='h-[8rem] flex items-center flex-col '>
         <div className='text-[#acacac] font-league font-bold text-[1.5rem] flex justify-center m-2'>Back end web development</div>
         <div className='text-[#636363] flex justify-center w-[80%]'>Node.js , Express.js , MongoDb , WebSockets ,Cloudinary ,Catching</div>
@@ -84,7 +84,7 @@ export default function Cards() {
 </div>
 
 
-<div data-aos="fade-up"  className='h-[36vh]  w-[88vw]  rounded-[3vw] bg-[#28282862]  card1  flex items-end m-2 ' >
+<div data-aos="fade-up"  className='h-[36vh]  w-[88vw]  rounded-[3vw] bg-[#28282862] border-[2px] border-[#242424]  card1  flex items-end m-2 ' >
     <div className='h-[8rem] flex items-center flex-col '>
         <div className='text-[#acacac] font-league font-bold text-[1.5rem] flex justify-center m-2'>Front end web development</div>
         <div className='text-[#636363] flex justify-center w-[80%]'>React.js , Next.js , JavaScript , Tailwind CSS ,HTML , CSS , API Intigration</div>
@@ -93,7 +93,7 @@ export default function Cards() {
 
 
 
-<div data-aos="fade-up"  className='h-[36vh] w-[88vw]  rounded-[3vw] bg-[#28282862]  card3  flex items-end m-2  ' >
+<div data-aos="fade-up"  className='h-[36vh] w-[88vw]  rounded-[3vw] bg-[#28282862] border-[2px] border-[#242424] card3  flex items-end m-2  ' >
     <div className='h-[8rem] flex items-center flex-col '>
         <div className='text-[#acacac] font-league font-bold text-[1.5rem] flex justify-center m-2'>Others</div>
         <div className='text-[#636363] flex justify-center w-[80%]'>C++ , Phython , Solidity , Block-chain development ,Git and Github  </div>
