@@ -43,9 +43,9 @@ export default function page() {
   return (
     <div className='comp111'>
       {/* <Cursor/> */}
-      <div>
-      <FAnimation/></div>
-    
+      <div className=' max-[600px]:hidden '>  <FAnimation/></div>
+    <div className='w-[100%] h-[100svh] bg-[#000000] min-[600px]:hidden '></div>
+     
       {/* <Header/> */}
       <Coverpage2/>
       <Ms/>

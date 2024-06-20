@@ -10,7 +10,8 @@ export default function Timeline() {
   return (
     <>
   
-      <div className='container  relative flex justify-center'>< FAnimation/>
+      <div className='container  relative flex justify-center'>  <div className=' max-[600px]:hidden '>  <FAnimation/></div>
+      <div className='w-[100%] h-[100svh] bg-[#000000] min-[600px]:hidden '></div>
       <div class=" flex-col min-[600px]:flex  absolute z-[1000000000000000000] top-[0rem] max-[600px]:top-[-2rem] min-[600px]:compstar  max-[600px]:h-[150vh]  pointer-events-none w-full ">
 
       {/* <div className='min-[600px]:hidden ml-[-2rem]'>
